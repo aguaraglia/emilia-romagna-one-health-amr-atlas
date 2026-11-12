@@ -10,7 +10,9 @@ La superficie pubblica contiene i confini ISTAT generalizzati al 1° gennaio 202
 
 ## Pagine
 
-`index.html` è il cruscotto con la mappa Leaflet. Le altre pagine sono `evidence.html`, `publications.html`, `methodology.html`, `about.html` e `dissemination.html`. GitHub Pages serve il ramo `main` dalla radice del repository. Non c'è un CNAME.
+`index.html` è il cruscotto con la mappa Leaflet. Le altre pagine sono `evidence.html`, `publications.html`, `methodology.html`, `about.html` e `dissemination.html`. Il sito è la radice del ramo `main`. Non c'è un CNAME.
+
+GitHub Pages va impostato su Deploy from a branch, ramo `main`, cartella `/` (root). La creazione del sito via API risponde 403 (`Resource not accessible by integration`) sia con il token di push sia con il token del workflow: l'abilitazione resta da fare nelle impostazioni del repository.
 
 ## Directory
 
