@@ -128,10 +128,25 @@
       errors.push(error.message);
     }
 
-    const total = loaded.reduce((sum, item) => sum + item.count, 0);
-    setText('metric-visible', total.toLocaleString('it-IT'));
-    setText('metric-sources', loaded.length.toLocaleString('it-IT'));
-    setText('overview-localized', total.toLocaleString('it-IT'));
+    const explicitEvidence = loaded.some(item => item.config.overviewCount === 'evidence');
+    const countsInOverview = (layerConfig) => {
+      if (layerConfig.overviewCount === 'evidence') return true;
+      if (explicitEvidence || layerConfig.overviewCount === 'context') return false;
+      const id = String(layerConfig.id || '').toLowerCase();
+      return !/municipalit|provinces|region_istat|hydro|wastewater|sira_|sire_/.test(id);
+    };
+    const refreshLocalized = () => {
+      const total = loaded.reduce((sum, item) => (
+        map.hasLayer(item.layer) && countsInOverview(item.config) ? sum + item.count : sum
+      ), 0);
+      const visible = loaded.filter(item => map.hasLayer(item.layer)).length;
+      setText('metric-visible', total.toLocaleString('it-IT'));
+      setText('metric-sources', visible.toLocaleString('it-IT'));
+      setText('overview-localized', total.toLocaleString('it-IT'));
+    };
+    map.on('overlayadd', refreshLocalized);
+    map.on('overlayremove', refreshLocalized);
+    refreshLocalized();
     setText('overview-layers', loaded.length.toLocaleString('it-IT'));
     setText('status', errors.length ? `${loaded.length} layer caricati · ${errors.length} non disponibili` : `${loaded.length} layer pubblici caricati`);
     loaded.forEach(item => {
