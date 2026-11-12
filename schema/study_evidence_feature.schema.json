@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aguaraglia.github.io/emilia-romagna-one-health-amr-atlas/schema/study_evidence_feature.schema.json",
+  "title": "Study evidence feature properties",
+  "description": "Property schema of each feature in the six literature GeoJSON layers. The geometry is a Point, a Polygon or a MultiPolygon. The regional-scale layer uses the unfilled ISTAT region outline.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["place", "geography_level", "geography_basis", "study_count", "study_ids", "authors", "year", "title", "sector", "organism", "doi", "geography_note"],
+  "properties": {
+    "place": {"type": "string"},
+    "geography_level": {"type": "string"},
+    "geography_basis": {"type": "string"},
+    "study_count": {"type": "integer", "minimum": 0},
+    "study_ids": {"type": "string"},
+    "authors": {"type": "string"},
+    "year": {"type": "string"},
+    "title": {"type": "string"},
+    "sector": {"type": "string"},
+    "organism": {"type": "string"},
+    "doi": {"type": "string"},
+    "geography_note": {"type": "string"}
+  }
+}

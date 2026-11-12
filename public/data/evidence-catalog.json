@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "edition": "erm_amr_atlas",
+  "records": [
+    {
+      "id": "assr_lab_rapporto_2025",
+      "title": "Sorveglianza dell'antibiotico-resistenza e uso di antibiotici sistemici in Emilia-Romagna. Rapporto 2025",
+      "publisher": "Agenzia sanitaria e sociale regionale dell'Emilia-Romagna",
+      "evidence_type": "human_amr_surveillance",
+      "geography": "Emilia-Romagna",
+      "period": "2025",
+      "source_url": "https://assr.regione.emilia-romagna.it/pubblicazioni/rapporti-documenti/antibioticoresistenza-2025",
+      "publication_status": "candidate",
+      "note": "Rapporto del sistema regionale di sorveglianza di laboratorio (LAB) e dei flussi di assistenza farmaceutica. Gli indicatori non sono estratti nell'Atlante."
+    },
+    {
+      "id": "assr_lab_rapporto_2024",
+      "title": "Sorveglianza dell'antibiotico-resistenza e uso di antibiotici sistemici in Emilia-Romagna. Rapporto 2024",
+      "publisher": "Agenzia sanitaria e sociale regionale dell'Emilia-Romagna",
+      "evidence_type": "human_amr_surveillance",
+      "geography": "Emilia-Romagna",
+      "period": "2024",
+      "source_url": "https://assr.regione.emilia-romagna.it/pubblicazioni/rapporti-documenti/antibioticoresistenza-2024",
+      "publication_status": "candidate",
+      "note": "Rapporto del sistema regionale di sorveglianza di laboratorio (LAB) e dei flussi di assistenza farmaceutica. Gli indicatori non sono estratti nell'Atlante."
+    },
+    {
+      "id": "ar_iss_2024_emilia_romagna",
+      "title": "AR-ISS 2024 — sorveglianza nazionale dell'antibiotico-resistenza",
+      "publisher": "Istituto Superiore di Sanità",
+      "evidence_type": "human_amr_regional",
+      "geography": "Emilia-Romagna",
+      "period": "2024",
+      "source_url": "https://www.epicentro.iss.it/antibiotico-resistenza/ar-iss/RIS-5_2025.pdf",
+      "publication_status": "candidate",
+      "note": "Rapporto nazionale RIS-5/2025, con appendice regionale. Le stime dell'Emilia-Romagna non sono estratte nell'Atlante. Nessun downscaling comunale."
+    },
+    {
+      "id": "aifa_osmed_2024_emilia_romagna",
+      "title": "Rapporto regionale OsMed — uso dei farmaci in Emilia-Romagna, anno 2024",
+      "publisher": "Agenzia Italiana del Farmaco",
+      "evidence_type": "human_antimicrobial_use",
+      "geography": "Emilia-Romagna",
+      "period": "2024",
+      "source_url": "https://www.aifa.gov.it/documents/20142/3610201/Emilia-Romagna_Osmed_2024.pdf",
+      "publication_status": "candidate",
+      "note": "Consumo e spesa farmaceutica, non resistenza. Citazione: Osservatorio Nazionale sull'impiego dei Medicinali. Report regionale sul consumo dei farmaci nella Regione Emilia-Romagna. Rapporto Nazionale Anno 2024. Roma: Agenzia Italiana del Farmaco, 2026. ISBN 979-12-80335-76-0. Nessuna cifra di consumo è estratta nell'Atlante."
+    },
+    {
+      "id": "prcar_2022_2025",
+      "title": "Piano regionale di contrasto all'antibiotico-resistenza (PrCAR 2022-2025)",
+      "publisher": "Regione Emilia-Romagna",
+      "evidence_type": "regional_policy",
+      "geography": "Emilia-Romagna",
+      "period": "2022-2025",
+      "source_url": "https://assr.regione.emilia-romagna.it/antibioticoresistenza-infezioni/prcar",
+      "publication_status": "candidate",
+      "note": "Recepimento del Piano nazionale con deliberazione di Giunta regionale n. 540/2023. Documento di governance, non un dataset di resistenza."
+    },
+    {
+      "id": "izsler_emilia_romagna",
+      "title": "Istituto Zooprofilattico Sperimentale della Lombardia e dell'Emilia-Romagna",
+      "publisher": "IZSLER",
+      "evidence_type": "veterinary_amr",
+      "geography": "Emilia-Romagna",
+      "period": "",
+      "source_url": "https://www.izsler.it/",
+      "publication_status": "candidate",
+      "note": "Istituto competente anche per l'Emilia-Romagna. Nessuno studio veterinario, di filiera o di fauna è inserito nell'Atlante."
+    },
+    {
+      "id": "arpae_aru_hera",
+      "title": "ARPAE — dataset ARU-HERA, acque reflue urbane",
+      "publisher": "Arpae Emilia-Romagna",
+      "evidence_type": "wastewater_context",
+      "geography": "Emilia-Romagna",
+      "period": "2026-10-02",
+      "source_url": "https://dati.arpae.it/explore/assets/aru-hera/",
+      "publication_status": "candidate",
+      "note": "Dataset aperto di controlli analitici sui depuratori del gestore HERA. Licenza CC BY 4.0. Scheda di catalogo aggiornata il 2026-10-02. Non è la geometria dell'intera rete regionale e non è pubblicato come layer. Nessun valore analitico è estratto nell'Atlante."
+    },
+    {
+      "id": "istat_admin_2026_emilia_romagna",
+      "title": "Confini delle unità amministrative a fini statistici al 1° gennaio 2026",
+      "publisher": "ISTAT",
+      "evidence_type": "administrative_geography",
+      "geography": "Emilia-Romagna",
+      "period": "2026-01-01",
+      "source_url": "https://www.istat.it/notizia/confini-delle-unita-amministrative-a-fini-statistici-al-1-gennaio-2018-2/",
+      "publication_status": "public_approved",
+      "summary": "Confine regionale, 8 province, Città metropolitana di Bologna e 330 comuni. Versione generalizzata, trasformata da EPSG:32632 a EPSG:4326.",
+      "note": "Licenza CC BY 4.0. Archivio Limiti01012026_g.zip. Conteggio verificato sul file: 330 comuni, 9 unità territoriali sovracomunali, 1 regione. Non è uno strato di resistenza."
+    }
+  ]
+}

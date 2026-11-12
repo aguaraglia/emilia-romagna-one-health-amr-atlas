@@ -1,0 +1,12 @@
+site/
+build-backups/
+.build-staging-*/
+tmp/
+private/**
+!private/README.md
+raw/**
+!raw/README.md
+releases/*.zip
+*.log
+__pycache__/
+*.pyc

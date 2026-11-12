@@ -1,0 +1,2 @@
+snapshot_id	source_id	dataset_version	source_url	acquired_at	local_path	sha256	file_format	notes
+istat_admin_2026_generalized	istat_admin_2026_emilia_romagna	2026-01-01	https://www.istat.it/storage/cartografia/confini_amministrativi/generalizzati/2026/Limiti01012026_g.zip	2026-11-12	raw/sources/istat/Limiti01012026_g.zip	B011A590656C3A3EBC297FBA80726A376AA843B6F164641CF6A4A990021A81D6	ZIP	Raw escluso da Git. DBF letto in UTF-8. Output EPSG:4326. 330 comuni, 9 unita territoriali sovracomunali, 1 regione

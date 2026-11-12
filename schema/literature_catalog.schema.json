@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aguaraglia.github.io/emilia-romagna-one-health-amr-atlas/schema/literature_catalog.schema.json",
+  "title": "Emilia-Romagna literature catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "edition", "selection_note", "records"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "edition": {"const": "erm_amr_atlas"},
+    "selection_note": {"type": "string"},
+    "records": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/record"}
+    }
+  },
+  "$defs": {
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "year", "title", "authors", "journal", "scope", "geographic_link", "pmid", "doi", "source_url"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "year": {"type": "integer"},
+        "title": {"type": "string"},
+        "authors": {"type": "string"},
+        "journal": {"type": "string"},
+        "scope": {"type": "string"},
+        "geographic_link": {"type": "string"},
+        "pmid": {"type": "string"},
+        "doi": {"type": "string"},
+        "source_url": {"type": "string"}
+      }
+    }
+  }
+}
